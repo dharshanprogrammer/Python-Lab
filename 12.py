@@ -1,55 +1,63 @@
 def set_operations():
-    size = int(input("Enter size of arrays: "))
+    rows = int(input("Enter number of rows: "))
+    cols = int(input("Enter number of columns: "))
+
+    print("Enter elements of Matrix A:")
     A = []
+    for i in range(rows):
+        row = []
+        for j in range(cols):
+            row.append(int(input(f"A[{i}][{j}]: ")))
+        A.append(row)
+
+    print("Enter elements of Matrix B:")
     B = []
+    for i in range(rows):
+        row = []
+        for j in range(cols):
+            row.append(int(input(f"B[{i}][{j}]: ")))
+        B.append(row)
 
-    print("Enter elements of Array A:")
-    for i in range(size):
-        A.append(int(input()))
+    # Flatten matrices into 1D lists
+    flat_A = [num for row in A for num in row]
+    flat_B = [num for row in B for num in row]
 
-    print("Enter elements of Array B:")
-    for i in range(size):
-        B.append(int(input()))
+    # --- Union ---
+    union_result = flat_A[:]
+    for x in flat_B:
+        if x not in union_result:
+            union_result.append(x)
 
-    union_result = []
-    for i in range(size):
-        union_result.append(A[i])
-    for i in range(size):
-        found = 0
-        for j in range(size):
-            if B[i] == A[j]:
-                found = 1
-                break
-        if found == 0:
-            union_result.append(B[i])
-
-    print("Union:", union_result)
-
+    # --- Intersection ---
     intersection_result = []
-    for i in range(size):
-        for j in range(size):
-            if A[i] == B[j]:
-                already_present = 0
-                for k in range(len(intersection_result)):
-                    if intersection_result[k] == A[i]:
-                        already_present = 1
-                        break
-                if already_present == 0:
-                    intersection_result.append(A[i])
+    for x in flat_A:
+        if x in flat_B and x not in intersection_result:
+            intersection_result.append(x)
 
-    print("Intersection:", intersection_result)
-
-
+    # --- Difference (A - B) ---
     difference_result = []
-    for i in range(size):
-        found = 0
-        for j in range(size):
-            if A[i] == B[j]:
-                found = 1
-                break
-        if found == 0:
-            difference_result.append(A[i])
+    for x in flat_A:
+        if x not in flat_B:
+            difference_result.append(x)
 
+    # --- Difference (B - A) ---
+    difference_result_ba = []
+    for x in flat_B:
+        if x not in flat_A:
+            difference_result_ba.append(x)
+
+    # Print Results
+    print("\nMatrix A:")
+    for row in A:
+        print(row)
+    print("Matrix B:")
+    for row in B:
+        print(row)
+
+    print("\nUnion (A ∪ B):", union_result)
+    print("Intersection (A ∩ B):", intersection_result)
     print("Difference (A - B):", difference_result)
+    print("Difference (B - A):", difference_result_ba)
+
 
 set_operations()
