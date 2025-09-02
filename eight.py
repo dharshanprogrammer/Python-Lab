@@ -2,7 +2,7 @@ def find_largest():
 
     n=int(input("Enter A Number Of Elements"))
     arr=[]
-    largest=0
+    largest=arr[0]
     for i in range(0,n):
         N=int(input("Enter The  Element"))
         arr.append(N)
