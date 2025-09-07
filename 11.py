@@ -7,7 +7,7 @@ def manual_sort():
         array.append(int(input()))
 
     for i in range(n):
-        for j in range(n - 1):
+        for j in range(n - 1-i):
             if array[j] > array[j + 1]:
                 temp = array[j]
                 array[j] = array[j + 1]

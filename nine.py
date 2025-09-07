@@ -40,16 +40,13 @@ def matrix_operations():
         print("Addition/Subtraction not possible (Matrix dimensions mismatch).")
 
     
-    if cols_A == rows_B:
+    if cols_A == cols_B and rows_A==rows_B:
         print("Matrix Multiplication:")
         result = []
         for i in range(rows_A):
             row = []
-            for j in range(cols_B):
-                s = 0
-                for k in range(cols_A):
-                    s += A[i][k] * B[k][j]
-                row.append(s)
+            for j in range(cols_A):
+                row.append((A[i][j]*B[i][j]))
             result.append(row)
 
         for row in result:

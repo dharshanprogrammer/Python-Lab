@@ -52,6 +52,4 @@ def classify_text_from_pdf(pdf_path):
         print("Error: PDF file not found.")
     except Exception as e:
         print(f"Error: {e}")
-
-
 classify_text_from_pdf("essay.pdf")
