@@ -34,4 +34,4 @@ else:
     exit()
 
 
-print(f"{value} {from_unit} is equal to {result} {to_unit}")
+print(f"{abs(value)} {from_unit} is equal to {abs(result)} {to_unit}")

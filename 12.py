@@ -18,17 +18,17 @@ def set_operations():
             row.append(int(input(f"B[{i}][{j}]: ")))
         B.append(row)
 
-    # Flatten matrices into 1D lists
+
     flat_A = [num for row in A for num in row]
     flat_B = [num for row in B for num in row]
 
-    # --- Union ---
+
     union_result = flat_A[:]
     for x in flat_B:
         if x not in union_result:
             union_result.append(x)
 
-    # --- Intersection ---
+
     intersection_result = []
     for x in flat_A:
         if x in flat_B and x not in intersection_result:
@@ -40,13 +40,11 @@ def set_operations():
         if x not in flat_B:
             difference_result.append(x)
 
-    # --- Difference (B - A) ---
     difference_result_ba = []
     for x in flat_B:
         if x not in flat_A:
             difference_result_ba.append(x)
 
-    # Print Results
     print("\nMatrix A:")
     for row in A:
         print(row)
