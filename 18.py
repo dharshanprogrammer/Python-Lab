@@ -8,7 +8,7 @@ def sort_names():
 
     for i in range(n):
         for j in range(n - 1):
-            if names[j] > names[j + 1]:
+            if names[j].lower() > names[j + 1].lower():
                 temp = names[j]
                 names[j] = names[j + 1]
                 names[j + 1] = temp
