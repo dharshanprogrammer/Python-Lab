@@ -37,12 +37,13 @@ class Student:
         print(f"Report generated: {report_filename}")
 
 
-# Example usage
+
 if __name__ == "__main__":
     reg_no = input("Enter Student Registration Number: ")
     student = Student(reg_no)
 
     name = input("Enter Student Name: ")
+
     age = input("Enter Student Age: ")
     course = input("Enter Student Course: ")
     student.save_personal_info(name, age, course)

@@ -1,3 +1,3 @@
-Name: Dharshan S
+Name: Dharshan
 Age: 18
-Course: Msc Software Systems
+Course: MscSS

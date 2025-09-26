@@ -14,7 +14,7 @@ def top_n_elements():
             if array[j] > array[max_index]:
                 max_index = j
         print(array[max_index], end=' ')
-        array[max_index] = -999999
+        array[max_index] = -99999-9
     print()
 
 top_n_elements()

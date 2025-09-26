@@ -23,7 +23,7 @@ class Vehicle:
         print(f"RC Book generated: {rc_filename}")
 
 
-# Example usage
+
 if __name__ == "__main__":
     reg_no = input("Enter Vehicle Registration Number: ")
     vehicle = Vehicle(reg_no)

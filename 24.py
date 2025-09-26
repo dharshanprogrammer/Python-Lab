@@ -47,7 +47,7 @@ def classify_text_from_pdf(pdf_path):
 
         print("[INFO] Classified word files saved.")
         print("[INFO] Email simulation completed.")
-
+        
     except FileNotFoundError:
         print("Error: PDF file not found.")
     except Exception as e:

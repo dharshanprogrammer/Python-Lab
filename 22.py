@@ -33,5 +33,6 @@ def analyze_results(excel_file):
         print("Error: Excel file not found.")
     except Exception as e:
         print(f" Error: {e}")
+        
 
 analyze_results(r"D:\All Folders\Python Lab\Students Semester Result.xlsx")

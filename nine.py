@@ -53,6 +53,7 @@ def matrix_operations():
             print(" ".join(map(str, row)))
     else:
         print("Multiplication not possible (columns of A ≠ rows of B).")
+        
 
 
 matrix_operations()
