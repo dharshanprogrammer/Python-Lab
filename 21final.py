@@ -39,3 +39,4 @@ if tokens:
     send_email(token_text, 'dharshanprogrammerprogress@gmail.com')  
 else:
     print("No tokens generated from the file.")
+    

@@ -21,6 +21,7 @@ class Vehicle:
         rc_filename = f"{self.reg_no}_rcbook.docx"
         document.save(rc_filename)
         print(f"RC Book generated: {rc_filename}")
+        
 
 
 
@@ -31,6 +32,6 @@ if __name__ == "__main__":
     owner_name = input("Enter Owner Name: ")
     vehicle_type = input("Enter Vehicle Type (Car/Truck/Bike): ")
     model = input("Enter Vehicle Model: ")
-
     vehicle.register_vehicle(owner_name, vehicle_type, model)
     vehicle.generate_rc_book()
+    
