@@ -1,0 +1,4 @@
+Register No: 13
+Name: Dharshan
+Department: msc SS
+ Personal info saved to studentreg-13.txt

@@ -1,0 +1,4 @@
+Register No: 20
+Name: Bravo
+Department: Msc SS
+ Personal info saved to studentreg-20.txt

@@ -1,0 +1,4 @@
+Register No: 18
+Name: Virat
+Department: Msc Aiml
+ Personal info saved to studentreg-18.txt

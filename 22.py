@@ -35,3 +35,4 @@ def analyze_results(excel_file):
         print(f" Error: {e}")
 
 
+analyze_results(f"D:\All Folders\Python Lab\Students Semester Result.xlsx")

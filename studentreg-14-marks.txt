@@ -1,0 +1,6 @@
+Maths: 99
+Science: 99
+English: 100
+
+Total: 298
+Average: 99.33

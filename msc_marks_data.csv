@@ -1,0 +1,16 @@
+Batch,Semester,Course_Name,Faculty_ID,Marks
+2018,1,Algorithms,F001,85
+2018,1,Linear Algebra,F002,75
+2018,2,Stats,F003,70
+2019,1,Algorithms,F001,92
+2019,1,Linear Algebra,F002,80
+2019,2,Stats,F003,68
+2020,1,Algorithms,F004,88
+2020,1,Linear Algebra,F002,72
+2020,2,Stats,F001,75
+2021,1,Algorithms,F004,95
+2021,1,Linear Algebra,F002,88
+2021,2,Stats,F003,80
+2022,1,Algorithms,F001,72
+2022,1,Linear Algebra,F002,90
+2022,2,Stats,F004,83

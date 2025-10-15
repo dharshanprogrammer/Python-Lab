@@ -1,0 +1,5 @@
+Register Number: 13
+Math: 100
+Physics: 100
+Chemistry: 100
+Computer Science: 100

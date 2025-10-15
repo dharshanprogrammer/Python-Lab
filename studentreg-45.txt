@@ -1,0 +1,4 @@
+Register No: 45
+Name: Rohit
+Department: Msc Dcs
+ Personal info saved to studentreg-45.txt
